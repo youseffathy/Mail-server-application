@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="attachName" prefHeight="20.0" prefWidth="416.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeAttach" maxHeight="23.0" maxWidth="50.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="22.0" style="-fx-background-color: #1a474a;" stylesheets="@Style.css" text="X" textFill="WHITE" />
+   </children>
+   <padding>
+      <Insets left="25.0" />
+   </padding>
+</HBox>

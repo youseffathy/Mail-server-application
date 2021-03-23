@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="48.0" prefWidth="691.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="report" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #1a474a;" text="Report Spam" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="143.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #1a474a;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="move" layoutX="274.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="99.0" style="-fx-background-color: #1a474a;" text="   Move" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </MenuButton>
+   </children>
+</AnchorPane>

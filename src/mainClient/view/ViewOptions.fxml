@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="48.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="refresh" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: #1a474a;" styleClass="refresh" stylesheets="@Style.css" />
+      <Button fx:id="allRead" layoutX="93.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: #1a474a;" text="Mark All as Read" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="sort" layoutX="248.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1a474a;" text="  Sort By" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="dateSort" mnemonicParsing="false" text="Date" />
+          <MenuItem fx:id="prioritySort" mnemonicParsing="false" text="Priority" />
+            <MenuItem fx:id="fromSort" mnemonicParsing="false" text="From" />
+        </items>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </MenuButton>
+   </children>
+</AnchorPane>

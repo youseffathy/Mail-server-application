@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<MenuItem fx:id="contact" mnemonicParsing="false" text="Unspecified Action" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <graphic>
+      <Button fx:id="removeContact" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #1a474a;" stylesheets="@Style.css" text="X" textFill="WHITE" />
+   </graphic>
+</MenuItem>

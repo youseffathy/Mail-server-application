@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="MailView" prefHeight="636.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.14037854889589904" layoutX="188.0" layoutY="102.0" orientation="VERTICAL" prefHeight="636.0" prefWidth="1096.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="100.0" minHeight="100.0" minWidth="1096.0" prefHeight="100.0" prefWidth="1096.0" style="-fx-background-color: #32797b;" SplitPane.resizableWithParent="false">
+               <children>
+                  <MenuButton fx:id="selectBtn1" layoutX="329.0" layoutY="26.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="439.0" style="-fx-background-color: #1a474a;" text="                                    Search" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <items>
+                        <MenuItem fx:id="dateSearch" mnemonicParsing="false" text="Date">
+                           <graphic>
+                              <DatePicker fx:id="date" prefHeight="30.0" prefWidth="377.0" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="subSearch" mnemonicParsing="false" text="Subject">
+                           <graphic>
+                              <TextField fx:id="subjectField" prefHeight="30.0" prefWidth="377.0" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="fromSearch" mnemonicParsing="false" text="From">
+                           <graphic>
+                              <TextField fx:id="fromField" prefHeight="30.0" prefWidth="377.0" />
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </MenuButton>
+                  <ImageView fitHeight="81.0" fitWidth="178.0" layoutX="92.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Untitled-2.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logout" layoutX="890.0" layoutY="27.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="151.0" style="-fx-background-color: #1a474a;" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.1" layoutX="158.0" layoutY="124.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="1094.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane prefHeight="56.0" prefWidth="1096.0" SplitPane.resizableWithParent="false">
+                           <children>
+                              <SplitPane dividerPositions="0.3645" maxHeight="50.0" minHeight="50.0" pickOnBounds="false" prefHeight="50.0" prefWidth="1094.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane maxWidth="395.0" minHeight="0.0" minWidth="395.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #32797b;">
+                                       <children>
+                                          <MenuButton fx:id="selectBtn" layoutX="282.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="99.0" style="-fx-background-color: #1a474a;" text="   Select" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                             </font>
+                                             <items>
+                                                <MenuItem mnemonicParsing="false" text="All" />
+                                                <MenuItem mnemonicParsing="false" text="None" />
+                                                <MenuItem mnemonicParsing="false" text="Read" />
+                                                <MenuItem mnemonicParsing="false" text="Unread" />
+                                                <MenuItem mnemonicParsing="false" text="Starred" />
+                                                <MenuItem mnemonicParsing="false" text="Unstarred" />
+                                             </items>
+                                          </MenuButton>
+                                          <MenuButton fx:id="contacts" layoutX="41.0" layoutY="6.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="187.0" style="-fx-background-color: #1a474a;" text="             Contacts" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                             </font>
+                                             <items>
+                                                <MenuItem mnemonicParsing="false">
+                                                   <graphic>
+                                                      <Label prefWidth="165.0" text="New.." />
+                                                   </graphic></MenuItem>
+                                             </items>
+                                          </MenuButton>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane fx:id="options" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #32797b;" />
+                                </items>
+                              </SplitPane>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <SplitPane dividerPositions="0.2467889908256881" layoutX="112.0" layoutY="82.0" prefHeight="483.0" prefWidth="1096.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #32797b;" SplitPane.resizableWithParent="false">
+                                       <children>
+                                          <ListView fx:id="foldersList" layoutX="33.0" layoutY="53.0" prefHeight="366.0" prefWidth="266.0" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0" />
+                                          <Button fx:id="compose" layoutX="58.0" layoutY="8.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="151.0" style="-fx-background-color: #1a474a;" text="Compose" textFill="WHITE">
+                                             <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                             </font></Button>
+                                          <Button fx:id="newFolder" layoutX="58.0" layoutY="419.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="151.0" style="-fx-background-color: #1a474a;" text="New Folder" textFill="WHITE" AnchorPane.bottomAnchor="12.0">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font></Button>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane fx:id="emailScene" maxWidth="818.0" minWidth="818.0" prefHeight="450.0" prefWidth="818.0" style="-fx-background-color: #32797b;" SplitPane.resizableWithParent="false" />
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

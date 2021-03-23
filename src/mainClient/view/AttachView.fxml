@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="attachName" prefHeight="20.0" prefWidth="752.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="downloadAttach" maxHeight="23.0" maxWidth="50.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="22.0" style="-fx-background-color: #1a474a;" stylesheets="@Style.css" text="↓" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets left="25.0" />
+   </padding>
+</HBox>

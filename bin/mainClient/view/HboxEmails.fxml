@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="45.0" maxWidth="802.0" minHeight="45.0" minWidth="802.0" prefHeight="45.0" prefWidth="802.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="drag" arcHeight="5.0" arcWidth="5.0" fill="#909090" height="45.0" stroke="#fcf9f9" strokeType="INSIDE" width="15.0" />
+      <CheckBox fx:id="selectEmail" mnemonicParsing="false" prefHeight="45.0" prefWidth="0.0" />
+      <Button fx:id="star" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" />
+      <Label fx:id="from" prefHeight="45.0" prefWidth="166.0" />
+      <Label fx:id="sub" prefHeight="45.0" prefWidth="132.0" />
+      <Label fx:id="date" prefHeight="45.0" prefWidth="151.0" />
+      <Label fx:id="emailNumber" disable="true" prefHeight="17.0" prefWidth="0.0" visible="false" />
+      <MenuButton fx:id="priority" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Very Important" />
+          <MenuItem mnemonicParsing="false" text="Important" />
+            <MenuItem mnemonicParsing="false" text="not important" />
+        </items>
+      </MenuButton>
+      <Label fx:id="read" prefHeight="45.0" prefWidth="50.0" />
+   </children>
+</HBox>

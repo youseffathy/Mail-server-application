@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="border" maxHeight="639.0" maxWidth="885.0" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <Rectangle fill="#1a474a" height="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Rectangle fill="#1a474a" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="7.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Rectangle fill="#1a474a" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="7.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="33.0" prefWidth="757.0" style="-fx-background-color: #1a474a;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Exit" layoutX="471.0" layoutY="4.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="26.0" stylesheets="@Style.css" text="X" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.8969849246231156" layoutX="71.0" layoutY="100.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="486.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.21022727272727273" layoutX="40.0" layoutY="132.0" orientation="VERTICAL" prefHeight="354.0" prefWidth="484.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane maxHeight="70.0" maxWidth="482.0" minHeight="70.0" minWidth="482.0" prefHeight="80.0" prefWidth="482.0">
+                                 <children>
+                                    <TextField fx:id="subject" layoutX="51.0" layoutY="31.0" prefHeight="35.0" prefWidth="418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    <Label layoutX="4.0" prefHeight="35.0" prefWidth="59.0" text="   To:" textFill="#133920">
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutY="36.0" prefHeight="35.0" prefWidth="67.0" text="Subjet:" textFill="#133920">
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <MenuButton fx:id="contacts" layoutX="65.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="416.0" style="-fx-background-color: #1a474a;" text="                                             Contacts" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" text="New.." />
+                                       </items>
+                                    </MenuButton>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.8315018315018315" orientation="VERTICAL" prefHeight="275.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="480.0">
+                                             <children>
+                                                <TextArea fx:id="emailBody" layoutX="6.0" prefHeight="210.0" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="74.0" prefWidth="480.0">
+                                             <children>
+                                                <ListView fx:id="attachments" layoutX="-6.0" layoutY="-71.0" prefHeight="57.0" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane maxHeight="40.0" minHeight="40.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Button fx:id="send" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: #1a474a;" text="Send" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="attach" layoutX="107.0" layoutY="5.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="button1" stylesheets="@Style.css" />
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

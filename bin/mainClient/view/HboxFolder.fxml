@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="266.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="folderName" prefHeight="49.0" prefWidth="167.0" textAlignment="RIGHT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailsNum" prefHeight="53.0" prefWidth="28.0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="folderOptions" mnemonicParsing="false" prefHeight="25.0" prefWidth="5.0" style="-fx-background-color: #a5fcd2;" styleClass="button" stylesheets="@Style.css">
+        <items>
+          <MenuItem fx:id="deleteEmail" mnemonicParsing="false" text="Delete" />
+          <MenuItem mnemonicParsing="false" text="Rename" />
+        </items>
+      </MenuButton>
+   </children>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</HBox>

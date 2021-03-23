@@ -1,0 +1,21 @@
+.button {
+    -fx-background-radius: 50;
+    
+}
+.anchor {
+    -fx-background-image:url('WhatsApp_cap-01.jpg');
+   
+} 
+.rootpane {
+	-fx-background-color: chocolate ;
+	
+}
+.button1 {
+	-fx-background-image:url('attachment.png');
+	-fx-background-size: 100% ;
+}
+.refresh {
+        -fx-background-image:url('refresh.png');
+    -fx-background-size: 100%;  
+        -fx-background-radius:4 ;
+}
